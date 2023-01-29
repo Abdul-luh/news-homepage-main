@@ -74,13 +74,17 @@ nav a:hover {
 	position: fixed;
 	top: 0;
 	right: 0;
-	width: 0;
+	display: none;
+	width: 70vw;
 	background-color: var(--Off-white);
+	padding: 2rem;
 	height: 100vh;
+	transition: 0.2s ease-in-out;
 }
 .side-nav > a {
-	position: relative;
-	right: 0;
+	position: absolute;
+	right: 5px;
+	top: 5px;
 }
 .closeBtn {
 	max-width: 3rem;
@@ -99,13 +103,11 @@ nav a:hover {
 .container {
 	padding: 2rem;
 }
-/* .sectionA {
-	margin-bottom: 2rem;
-} */
+
 .hero-img {
 	background: url(./assets/images/image-web-3-mobile.jpg);
 	background-size: cover;
-	/* min-height: 40vh; */
+	min-height: 40vh;
 }
 
 .hero-text {
@@ -192,7 +194,7 @@ button:hover {
 
 .sectionC {
 	margin-top: rem;
-	max-height: 10rem;
+	max-height: 1git 0rem;
 }
 
 .topic {
