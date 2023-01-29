@@ -18,20 +18,34 @@
 	</head>
 	<body>
 		<div class="container">
-			<!-- <nav class="topnav" id="myTopnav">
-        <a href="">
-        <img src="./assets/images/logo.svg" alt="">
-        </a>
-        <a class="active" href="">Home</a>
-        <a href="">New</a>
-        <a href="">Popular</a>
-        <a href="">Contact</a>
-        <a href="">Trending</a>
-        <a href="">Categories</a>
-        <a href="javascript:void(0)" class="icon" onclick="myFunction()">&#9776</a>
-      </nav> -->
+		<nav class="topnav">
+			<a href="">
+				<img src="./assets/images/logo.svg" class="logo" alt="">
+        
+        	<div class="menu-list">
+				<a class="active" href="">Home</a>
+        	<a href="">New</a>
+        	<a href="">Popular</a>
+        	<a href="">Trending</a>
+        	<a href="">Categories</a>
+			</div>
+        	<a href="javascript:void(0)" class="icon-menu" onclick="openMenuFunc()"><img src="./assets/images/icon-menu.svg" alt=""></a>
 
-			<div class="header">
+        	<div class="side-nav" id="sideNavMenu">
+				<a href="javascript:void(0)" onclick="closeMenuFunc()">
+					<img src="./assets/images/icon-menu-close.svg" class="closeBtn" width="4px" height="70px" alt="">
+				</a>
+				<div>
+					<a href="">HOME</a>
+					<a href="">ABOUT</a>
+					<a href="">SERVICES</a>
+					<a href="">DESIGN</a>
+					<a href="">CONTACT</a>
+				</div>
+			</div>
+      </nav>
+
+			<div onclick="closeMenuFunc()" class="header">
 				<div class="sectionA">
 					<div class="hero-img"></div>
 					<div class="hero-text">
@@ -101,15 +115,14 @@
 					</div>
 				</div>
 			</div>
-			-->
 		</div>
 
-		<div class="attribution">
+		<!-- <div class="attribution">
 			Challenge by
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 				>Frontend Mentor</a
-			>. Coded by <a href="#">Odulate Abdullah</a>.
-		</div>
+			>. Coded by <a href="https://github.com/Abdul-luh">Odulate Abdullah</a>.
+		</div> -->
 		<script src="./main.js"></script>
 	</body>
 </html>
