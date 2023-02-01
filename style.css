@@ -33,6 +33,10 @@
 .attribution a {
 	color: hsl(228, 45%, 44%);
 }
+@font-face {
+	font-family: "Inter-Rgular";
+	src: url(./assets/fonts/static/Inter-Regular.ttf);
+}
 
 * {
 	margin: 0;
@@ -41,8 +45,9 @@
 }
 
 body {
-	font-family: "Times New Roman", Times, serif;
+	font-family: "Inter-Rgular";
 	max-height: 100vh;
+	background-color: var(--Off-white);
 }
 
 /* MOBILE VIEW */
@@ -64,7 +69,8 @@ nav a {
 	margin: 0.8rem;
 }
 .side-nav a:hover,
-nav a:hover {
+nav a:hover,
+h4:hover {
 	color: var(--Soft-red);
 }
 .menu-list {
@@ -113,9 +119,10 @@ nav a:hover {
 .hero-text {
 	display: block;
 	min-height: 40vh;
-	margin-bottom: 5rem;
+	/* margin-bottom: 5rem; */
 }
 .hero-text div {
+	margin-top: 1rem;
 	display: flex;
 	flex-direction: column;
 	place-items: start;
@@ -128,30 +135,42 @@ img {
 	max-height: 40%;
 	min-height: 100%;
 }
-
+@font-face {
+	font-family: Inter-ExtraBold;
+	src: url(./assets/fonts/static/Inter-ExtraBold.ttf);
+}
 h1 {
+	font-family: "Inter-ExtraBold";
 	font-size: 2.8rem;
+	font-weight: 900;
 	margin: 0.75rem;
 	color: var(--Very-dark-blue);
 }
+
+@font-face {
+	font-family: Inter-Bold;
+	src: url(./assets/fonts/static/Inter-Bold.ttf);
+}
 h2 {
-	font-size: 2.5rem;
-	font-weight: 600;
+	font-family: "Inter-Bold";
+	font-size: 2.6rem;
+	font-weight: 900;
 }
 h3 {
-	font-size: 2rem;
-	font-weight: 600;
+	font-family: "Inter-Bold";
+	font-size: 1.5rem;
+	font-weight: 900;
 	margin: 1rem 0;
 }
 h4 {
+	font-family: "Inter-ExtraBold";
 	color: var(--Very-dark-blue);
-	font-size: 1.5rem;
-	font-weight: 600;
+	font-size: 1.2rem;
+	font-weight: 900;
 	margin: 1rem 0;
 }
 p {
 	font-size: var(--Font-size-paragraph);
-	font-weight: 400;
 	color: var(--Dark-grayish-blue);
 	line-height: 2rem;
 }
@@ -160,8 +179,8 @@ button {
 	font-size: 1rem;
 	background-color: var(--Soft-red);
 	border: none;
-	padding: 1rem 3.5rem;
-	margin: 3rem 0 1.8rem 0;
+	padding: 1.5rem 3rem;
+	margin: 3rem 0 0 0;
 	cursor: pointer;
 	letter-spacing: 5px;
 }
@@ -173,10 +192,11 @@ button:hover {
 .sectionB {
 	background-color: var(--Very-dark-blue);
 	padding: 2rem;
-	max-height: 54rem;
+	margin-top: 3.5rem;
+	/* min-height: 100%; */
 }
 .sectionB div {
-	padding: 2rem 0;
+	padding: 0.5rem 0;
 }
 .sectionB div:nth-child(3) {
 	border-top: 1px solid var(--Off-white);
@@ -194,8 +214,8 @@ button:hover {
 }
 
 .sectionC {
-	margin-top: rem;
-	max-height: 1git 0rem;
+	margin-top: 3rem;
+	max-height: 10rem;
 }
 
 .topic {
@@ -212,7 +232,7 @@ button:hover {
 	flex-direction: column;
 	place-content: center;
 }
-.topic h3 {
+.topic h2 {
 	color: var(--Grayish-blue);
 }
 
@@ -261,12 +281,16 @@ button:hover {
 		gap: 1rem;
 	}
 	h1 {
-		font-size: 4rem;
+		font-size: 3.8rem;
+	}
+	button {
+		margin-bottom: 0;
 	}
 
 	.sectionB {
 		display: grid;
 		grid-template-columns: 1fr;
+		margin-top: 0;
 	}
 
 	.sectionB div {
